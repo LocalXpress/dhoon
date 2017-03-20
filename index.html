@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Page</title>
+<link href="material-css/material.css" rel="stylesheet" type="text/css">
+<link href="material-css/material.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script src="material-css/material.js"></script>
+<script src="material-css/material.min.js"></script>
+<style>
+.demo-layout-transparent {
+  background: url("../Project Web Development/images/background.jpg") center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+.login { 
+	outline:none;
+	padding:6px 15px 6px 30px;
+	margin:3px; 
+	background: url('./images/user.png') no-repeat 5px; 
+}
+.pass { 
+	outline:none;
+	padding:6px 15px 6px 30px;
+	margin:3px; 
+	background: url('./images/pass.png') no-repeat 5px; 
+}
+.rounded { 
+	border-radius:15px; 
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+}
+input[type=text]{
+	border:1px solid #d0d0d0;
+	background-color:#fcfcfc;
+}
+input[type=password]{
+	border:1px solid #d0d0d0;
+	background-color:#fcfcfc;
+}
+.button {
+    background-color: #FF5F00;
+    border: 1px solid #A84900;
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+	outline:none;
+    cursor: pointer;
+	border-radius: 12px;
+}
+.music{
+	width:80%;
+	margin:auto;
+	margin-bottom:20px;
+}
+.music_img{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+}
+.music_img_pad{
+	margin-left:20px;
+}
+</style>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <img style="padding-top:20px;" src="images/d.png"/>
+      <img style="padding-top:20px;" src="images/h.png"/>
+      <img style="padding-top:20px;" src="images/o.png"/>
+      <img style="padding-top:20px;" src="images/o.png"/>
+      <img style="padding-top:20px;" src="images/n.png"/>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <div style="padding-top:30px;" class="mdl-navigation">
+      <form>
+      <span><input type="text" class="login rounded" placeholder="User Name"></span>
+      <span><input type="password" class="pass rounded" placeholder="Password"></span>
+	  <span><button class="button">Login</button></span>
+      </form>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-shadow--16dp" style="border:none;background-color: rgba(251,210,0,0.85);">
+  	<span class="mdl-layout-title"><img class="music_img" style="margin-top:20px;" src="images/background.jpg"></span>
+    <span class="mdl-layout-title" style="color:#000000">Name</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" style="color:#000000" href="">About</a>
+      <a class="mdl-navigation__link" style="color:#000000" href="">Playlist</a>
+    </nav>
+  </div>
+  <div style="width:90%; padding-top:100px;" class="mdl-grid">
+  <div style="width:60%;" class="mdl-cell">
+  	<div style="width:100%;" class="demo-card-wide mdl-card mdl-shadow--2dp ">
+<form action="#" style="margin:auto; width:40%; padding:2px;">
+  <div class="mdl-textfield mdl-js-textfield" style="width:100%;">
+    <textarea class="mdl-textfield__input " style="text-align:center; font-size:20px;" type="text" rows= "1" id="sample5" ></textarea>
+          <label class="mdl-textfield__label" style="text-align:center;font-size:20px" for="sample5">Search</label>
+    </div>
+    <button style="display:block; margin:auto;margin-bottom:20px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent ">
+    Search
+      </button>
+	</form>
+    <div style="display: table-cell; margin:auto; widows:60%; padding-bottom:20px;">
+   	   	<label style="width:auto;" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+  	      Love <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input"/>
+  	    </label>
+       	<label style="width:auto;" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-2">
+  	      Sad <input type="checkbox" id="list-checkbox-2" class="mdl-checkbox__input"/>
+  	    </label>
+    </div>
+    <div class="music demo-card-wide mdl-card mdl-shadow--4dp mdl-card--border">
+      	<div class="mdl-card__title">
+    	 <h2 class="mdl-card__title-text" style="color:#FF5F00">ZAYN, Taylor Swift - I Don’t Wanna Live Forever (Fifty Shades Darker)</h2>
+	    </div>
+        <div style="display:block;">
+        <img style="float:left;" class="music_img music_img_pad" src="images/live forever.png"/>
+        <div style="margin-left:150px;; width:65%;margin-top:35px;">
+        <audio style="width:100%;" controls>
+          <source src="songs/ZAYN, Taylor Swift - I Don’t Wanna Live Forever (Fifty Shades Darker) (320  kbps) (eMP3z.com).mp3" type="audio/mpeg"/>
+        </audio>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div style="width:30%;" class="mdl-cell">
+    <div style="width:100%;" class="mdl-card mdl-shadow--2dp ">
+    <div style="display:block; margin:auto;" class="mdl-card__title">
+     <h2 class="mdl-card__title-text" style="color:#FF5F00">Sign Up</h2>
+    </div>
+    <form action="#">
+      <div style="display:block; margin:auto; width:60%;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+       <input style="outline:none; border:none;" class="mdl-textfield__input" type="text">
+       <label class="mdl-textfield__label" for="sample3">User ID</label>
+      </div>
+      <div style="display:block; margin:auto; width:60%;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input style="outline:none; border:none;" class="mdl-textfield__input" type="password">
+        <label class="mdl-textfield__label" for="sample3">Password</label>
+      </div>
+      <br>
+      <button style="display:block; margin:auto;margin-bottom:20px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent ">
+        Login
+      </button>
+    </form>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
